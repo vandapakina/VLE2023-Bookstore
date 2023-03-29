@@ -51,31 +51,47 @@
         <!-- ostukorv -->
         <section>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 d-flex align-items-start flex-column border border-dark">
-                        <div class="mb-auto p-2"><h4>Ostukorvis on 1 toode</h4></div>    
+                <div class="row gx-5"> <!-- gx praegu ei tööta, aga see on vajalik selleks, et teha vahe kastide vahele -->
+                    <div class="col-lg-6 d-flex align-items-start flex-column border border-dark p-5">
+                        <div class="p-2"><h4>Ostukorvis on 1 toode</h4></div>    
+                        <!-- toode1 -->
                         <div class="mb-auto p-2 row">
                             <div class="col-lg-6">
-                                <img src="soap.png" width="100%">
+                                <img src="pilt.png" width="70%">
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 text-right">
                                 <p>15.99&#8364;</p>
-                                <p>Toode 1</p>
-                                    <select class="form-control col-lg-5 form-sm" id="kogus">
-                                        <option>0</option>
-                                        <option selected="selected">1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                <br/>
+                                <select class="form-control col-4 float-right form-sm" id="kogus">
+                                    <option>0</option>
+                                    <option selected="selected">1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
                             </div>            
                         </div>
+                        
+                        <!-- toode2 -->
+                        <div class="mb-auto row">
+                            <div class="col-lg-6">
+                                <img src="pilt.png" width="70%">
+                            </div>
+                            <div class="col-lg-6 text-right">
+                                <p>15.99&#8364;</p>
+                                <select class="form-control col-4 float-right form-sm" id="kogus">
+                                    <option>0</option>
+                                    <option selected="selected">1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>            
+                        </div>
+                        
                         <div class="p-2">
                             <p>Tarne: <span class="text-primary">tasuta</span></p>
                             <p>Kokku: <span class="text-primary">15.99&#8364;</span></p>
                         </div>
                     </div>
-                    <div class="col-lg-6 border border-dark">
+                    <div class="col-lg-6 p-5 border border-dark">
                         <!-- Kasutaja andmed --->
                         <form>
                             <div class="mb-auto"><h4>Andmed</h4></div> 
@@ -93,40 +109,44 @@
                             </div>
                         </form>
                         <br>
-                        <!-- Tarneviisid --->
-                        <form>
-                            <div class="mb-auto"><h4>Tarneviisid</h4></div>  
-                            <select class="form-control col-lg-7 form-sm" id="tarneviis">
-                                <option selected="selected">Kohaletoimetamine pakiautomaati</option>
-                                <option>Kättesaamine väljastuspunktist</option>
-                                <option>Kojuvedu</option>
-                            </select>
-                        </form>
-                        <br>
-                        <!-- Makseviisid -->
-                        <form>
-                            <div class="mb-auto"><h4>Makseviisid</h4></div> 
-                            <div class="form-check">
-                                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Card
-                                <label class="form-check-label" for="radio1"></label>
-                                <i class="fa fa-cc-visa"></i>
-                                <i class="fa fa-cc-mastercard"></i>
-                                <i class="fa fa-cc-amex"></i>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">PayPal
-                                <label class="form-check-label" for="radio2"></label>
-                                <i class="fa fa-cc-paypal"></i>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">Checking
-                                <label class="form-check-label" for="radio3"></label>
-                                <i class="fa fa-bank"></i>
-                            </div>
-                            <div class="p-5 mx-auto">
-                                <a href="kinnitus.html" class="btn btn-dark btn-lg mb-3">Maksa</a>
-                            </div>  
-                        </form>
+                        
+                        <div class="row">
+                            <!-- Tarneviisid --->
+                            <form class="col">
+                                <div class="mb-auto pb-2"><h4>Tarneviisid</h4></div>  
+                                <select class="form-control col form-sm" id="tarneviis">
+                                    <option selected="selected">Kohaletoimetamine pakiautomaati</option>
+                                    <option>Kättesaamine väljastuspunktist</option>
+                                    <option>Kojuvedu</option>
+                                </select>
+                            </form>
+                            <br>
+                            <!-- Makseviisid -->
+                            <form class="col text-center">
+                                <div class="mb-auto"><h4>Makseviisid</h4></div> 
+                                <!--radiobuttons-->
+                                <div class="text-left ml-5">
+                                    <div class="form-check my-2 pt-2">
+                                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Card
+                                        <label class="form-check-label" for="radio1"></label>
+                                    </div>
+                                    <div class="form-check my-2">
+                                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">PayPal
+                                        <label class="form-check-label" for="radio2"></label>
+                                    </div>
+                                    <div class="form-check my-2">
+                                        <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">Checking
+                                        <label class="form-check-label" for="radio3"></label>
+                                    </div>
+
+                                </div>
+                                
+                            </form>
+                        </div>
+                        <!-- nupp -->
+                        <div class="p-5 mx-auto text-center">
+                            <a href="#" class="btn btn-dark btn-lg mb-3">Maksa</a>
+                        </div>  
                     </div>  
                     <br>       
                 </div>   
