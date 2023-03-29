@@ -1,0 +1,71 @@
+.lnr {
+    display: inline-block;
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.05em;
+    stroke-width: 2;
+}
+
+.lnr-cart {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.lnr-magnifier {
+    color: #000000;   
+}
+
+.navbar-nav li {
+    margin-right: 3em;
+}
+
+section {
+    margin-top: 40px;
+}
+
+.h {
+    text-align: center;
+}
+
+.card-body {
+    align-content: center;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 5em;
+}
+
+.jumbotron {
+    color: rgb(137, 135, 135);
+}
+
+.jumbotron a {
+    background-color: rgb(199, 93, 109);
+    border-color: rgb(199, 93, 109);
+}
+
+
+.fas {
+    font-size: 30px;
+    width: 70px;
+    text-decoration: none;
+}
+
+.fab {
+    font-size: 30px;
+}
+
+.col-sm a {
+    flex-direction: column;
+}
+
+.form-check i {
+    font-size: 36px;
+}
+
+
+
+
+
