@@ -66,7 +66,10 @@ footer {
     font-size: 36px;
 }
 
-
-
+#disabled {
+    color: currentColor;
+    text-decoration: none;
+    outline: none;
+}
 
 
