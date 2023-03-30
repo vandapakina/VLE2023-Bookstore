@@ -77,6 +77,7 @@ section {
 }
 
 /* Multikarusell */
+
 .col-md-4 {
     display: inline-block;
     margin-left:-10px;
@@ -107,4 +108,8 @@ span.carousel-control-next-icon {
 .bi.bi-star-fill {
     font-size: 25px; 
     color: rgb(255, 210, 48);
+}
+
+#vahe {
+    margin-right:2%;
 }
