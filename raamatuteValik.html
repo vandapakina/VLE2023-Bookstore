@@ -12,6 +12,12 @@
         <!-- minu CSS -->
         <link rel="stylesheet" href="custom.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <!-- multikarusell -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!--- star -->
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>    
     </head>
     <body>
         <!-- päis --->
@@ -47,68 +53,534 @@
             </div>
             <a href="ostukorv.html"><button class="btn btn-dark my-2 my-sm-0" type="submit"><svg class="lnr lnr-cart"><use xlink:href="#lnr-cart"></use></svg></button></a>
         </nav>
-        <!-- tooted --->
-        <section>
+         <!-- karusell 1 -->
+         <div class="pt-5 pl-5 pr-5">
+            <h2>Uued raamatud</h2>
             <div class="container">
-                <h2 class="h mb-3 text-left">Uued Raamatud</h2>
-                <div class="row"> 
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 1</a></h5>
-                                <p class="text-muted card-text"> 15.99&#8364;</p> 
-                                <a role="button" href="raamatuLeht.html" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div> 
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 2</a></h5>
-                                <p class="text-muted card-text"> 12.99&#8364;</p> 
-                                <a role="button" href="raamatuLeht.html" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div> 
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 3</a></h5>
-                                <p class="text-muted card-text"> 9.99&#8364;</p> 
-                                <a role="button" href="raamatuLeht.html" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div> 
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 4</a></h5>
-                                <p class="text-muted card-text"> 18.99&#8364;</p> 
-                                <a role="button" href="raamatuLeht.html" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div> 
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 5</a></h5>
-                                <p class="text-muted card-text"> 1.99&#8364;</p> 
-                                <a role="button" href="raamatuLeht.html" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <!-- The slideshow -->
+                    <div class="carousel-inner no-padding my-5">
+                        <div class="carousel-item active">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="row"></div>
+                                    <div class="col text-right mr-3">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top rounded-bottom" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top rounded-bottom" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div>                       
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div>  
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 6</a></h5>
-                                <p class="text-muted card-text"> 5.99&#8364;</p> 
-                                <a role="button" href="raamatuLeht.html" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div> 
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev"><span class="carousel-control-prev-icon sp"></span></a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next"><span class="carousel-control-next-icon sp"></span></a>
                 </div>
             </div>
-        </section>   
+        </div>
+
+         <!-- karusell 2 -->
+         <div class="pl-5 pr-5">
+            <h2>Bestsellerid</h2>
+            <div class="container">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <!-- The slideshow -->
+                    <div class="carousel-inner no-padding my-5">
+                        <div class="carousel-item active">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="row"></div>
+                                    <div class="col text-right mr-3">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top rounded-bottom" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top rounded-bottom" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div>                       
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev"><span class="carousel-control-prev-icon sp"></span></a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next"><span class="carousel-control-next-icon sp"></span></a>
+                </div>
+            </div>
+        </div>
+        <!-- karusell 3-->
+         <div class="pl-5 pr-5">
+            <h2>Detektiivid</h2>
+            <div class="container">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <!-- The slideshow -->
+                    <div class="carousel-inner no-padding my-5">
+                        <div class="carousel-item active">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="row"></div>
+                                    <div class="col text-right mr-3">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top rounded-bottom" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top rounded-bottom" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div>                       
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4">
+                                <a href="#" class="slider_info">
+                                <img class="img-fluid card-img-top" src="pilt.png">
+                                </a>
+                                <div class="row">
+                                    <div class="col text-left pt-2">
+                                        <h5>Lorem ipsum</h5>
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row h-100 w-100 justify-content-center align-items-center">
+                                            <p class="m-0 p-0 mr-3">4.2</p>
+                                            <span class="bi bi-star-fill"></span>
+                                        </div>
+                                    </div>  
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev"><span class="carousel-control-prev-icon sp"></span></a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next"><span class="carousel-control-next-icon sp"></span></a>
+                </div>
+            </div>
+        </div>
          <!-- jalus --->
          <footer class="bg-dark">
             <div class="container-fluid">

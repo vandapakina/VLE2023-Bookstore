@@ -99,3 +99,8 @@ span.carousel-control-next-icon {
    position: relative;
    bottom: 40px;
 }
+
+.bi.bi-star-fill {
+    font-size: 25px; 
+    color: rgb(255, 210, 48);
+}
