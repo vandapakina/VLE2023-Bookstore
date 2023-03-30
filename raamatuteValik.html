@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content=""> 
         <meta name="author" content="">
-        <title>Raamatute valik</title>
+        <title>RAAMATUPOOD | Raamatute valik</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
         <!-- minu CSS -->
@@ -20,7 +20,19 @@
         <header class="py-2">
             <div class="container-fluid">
                 <div class="row">
-                    <a id="disabled" href="maandumisleht.html"><h1 class="m-3">Raamatupood</h1></a>
+                    <div class="col-lg-6">
+                        <a id="disabled" href="maandumisleht.html"><h1 class="m-3"><i>RAAMATUPOOD</i></h1></a>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-end align-items-center">
+                        <div class="row m-3">
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" aria-label="Search">
+                                <button class="btn btn-outline-white my-2 my-sm-0" type="submit"><svg class="lnr lnr-magnifier"><use xlink:href="#lnr-magnifier"></use></svg></button>
+                            </form>
+                            <a href="ostukorv.html"><button class="btn btn-dark my-2 my-sm-0" type="submit"><svg class="lnr lnr-cart"><use xlink:href="#lnr-cart"></use></svg></button></a>
+                            <a href="#"><button class="btn btn-dark my-2 my-sm-0 ml-1" type="submit"><svg class="lnr lnr-user"><use xlink:href="#lnr-user"></use></svg></button></a>
+                        </div>
+                    </div>
                 </div>          
             </div>
         </header>
@@ -29,8 +41,8 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav mr-auto">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav align-items-center">
                     <li class="nav-item"><a class="nav-link" href="#">Uued raamatud</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Bestsellerid</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Detektiivid</a></li>
@@ -40,26 +52,18 @@
                     <li class="nav-item"><a class="nav-link" href="#">Haridus</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Lastele</a></li>
                 </ul>
-                <!-- search -->
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Otsi" aria-label="Search">
-                    <button class="btn btn-outline-white my-2 my-sm-0" type="submit"><svg class="lnr lnr-magnifier"><use xlink:href="#lnr-magnifier"></use></svg></button>
-                </form>
             </div>
-            <a href="ostukorv.html"><button class="btn btn-dark my-2 my-sm-0" type="submit"><svg class="lnr lnr-cart"><use xlink:href="#lnr-cart"></use></svg></button></a>
         </nav>
-         <!-- karusell 1 -->
-         <div class="pt-5 pl-5 pr-5">
+        <!-- karusell 1 -->
+        <div class="pt-5 pl-5 pr-5">
             <h2>Uued raamatud</h2>
             <div class="container">
                 <div id="demo" class="carousel slide" data-ride="carousel">
                     <!-- slideshow -->
-                    <div class="carousel-inner no-padding my-5">
+                    <div class="carousel-inner my-5">
                         <div class="carousel-item active">
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -75,9 +79,7 @@
                                 </div> 
                             </div>
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top rounded-bottom" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top rounded-bottom" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -92,9 +94,7 @@
                                 </div> 
                             </div>
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top rounded-bottom" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top rounded-bottom" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -111,9 +111,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -128,9 +126,7 @@
                                 </div> 
                             </div>
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -145,9 +141,7 @@
                                 </div> 
                             </div>
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -164,9 +158,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -181,9 +173,7 @@
                                 </div> 
                             </div>
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -198,9 +188,7 @@
                                 </div> 
                             </div>
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -224,16 +212,14 @@
         </div>
          <!-- karusell 2 -->
          <div class="pl-5 pr-5">
-            <h2>Detektiivid</h2>
+            <h2>Bestsellerid</h2>
             <div class="container">
                 <div id="demo2" class="carousel slide" data-ride="carousel">
                     <!-- slideshow -->
                     <div class="carousel-inner no-padding my-5">
                         <div class="carousel-item active">
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -249,9 +235,7 @@
                                 </div> 
                             </div>
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top rounded-bottom" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top rounded-bottom" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -266,9 +250,7 @@
                                 </div> 
                             </div>
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top rounded-bottom" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top rounded-bottom" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -285,9 +267,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -302,9 +282,7 @@
                                 </div> 
                             </div>
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -319,9 +297,7 @@
                                 </div> 
                             </div>
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -338,9 +314,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -355,9 +329,7 @@
                                 </div> 
                             </div>
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="#" class="slider_info">
-                                <img class="img-fluid card-img-top" src="images/pilt.png">
-                                </a>
+                                <a href="#" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -372,9 +344,7 @@
                                 </div> 
                             </div>
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -405,9 +375,7 @@
                     <div class="carousel-inner no-padding my-5">
                         <div class="carousel-item active">
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -423,9 +391,7 @@
                                 </div> 
                             </div>
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top rounded-bottom" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top rounded-bottom" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -440,9 +406,7 @@
                                 </div> 
                             </div>
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top rounded-bottom" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top rounded-bottom" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -457,12 +421,9 @@
                                 </div>                       
                             </div>
                         </div>
-
                         <div class="carousel-item">
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -477,9 +438,7 @@
                                 </div> 
                             </div>
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -494,9 +453,7 @@
                                 </div> 
                             </div>
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -513,9 +470,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -530,9 +485,7 @@
                                 </div> 
                             </div>
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -547,9 +500,7 @@
                                 </div> 
                             </div>
                             <div class="col-xs-4 col-sm-4 col-md-4">
-                                <a href="raamatuLeht.html" class="slider_info">
-                                <img class="img-fluid card-img-top" src="pilt.png">
-                                </a>
+                                <a href="raamatuLeht.html" class="slider_info"><img class="img-fluid card-img-top" src="images/pilt.png"></a>
                                 <div class="row">
                                     <div class="col text-left pt-2">
                                         <h5>Lorem ipsum</h5>
@@ -572,36 +523,25 @@
             </div>
         </div>
          <!-- jalus --->
-         <footer class="bg-dark">
+        <footer class="bg-dark">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm">
-                        <h5 class="text-uppercase fw-bold mb-4 align-items-center text-light">Contact</h5>
-                        <p class="text-light"><i class="fas fa-home me-3 text-secondary"></i> Narva mnt 18, 51009 Tartu</p>
-                        <p class="text-light"><i class="fas fa-envelope me-3 text-secondary"></i> info@info.ee</p>
-                        <p class="text-light"><i class="fas fa-phone me-3 text-secondary"></i> + 372 54925629</p>
+                    <div class="col-sm pl-5 d-flex flex-column justify-content-center align-items-start">
+                        <h6 class="fw-bold mb-3 text-light">VÕTA MEIEGA ÜHENDUST!</h6>
+                        <p class="text-light"><i class="fas fa-home me-2 text-secondary"></i>Narva mnt 18, 51009 Tartu</p>
+                        <p class="text-light"><i class="fas fa-envelope me-2 text-secondary"></i>info@info.ee</p>
+                        <p class="text-light mb-0"><i class="fas fa-phone me-2 text-secondary"></i>+ 372 54925629</p>
                     </div>
-                    <div class="col-sm"></div>
-                    <div class="col-sm text-center">
+                    <div class="col-sm d-flex justify-content-center align-items-center">
+                        <a class="text-decoration-none" href="#"><h6 class="fw-bold text-light">MEIST ROHKEM</h6></a>
+                    </div>
+                    <div class="col-sm pr-5 d-flex flex-column justify-content-center align-items-end">
                         <!-- Facebook -->
-                        <a class="btn btn-outline-light m-1"
-                        href="#!"
-                        role="button">
-                            <i class="fab fa-facebook-f text-light"></i>
-                        </a>
-                        <!-- Google -->
-                        <a class="btn btn-outline-light m-1"
-                        href="#!"
-                        role="button">
-                            <i class="fab fa-google text-light"></i>
-                        </a>
+                        <a class="btn btn-outline-light m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
                         <!-- Instagram -->
-                        <a
-                        class="btn btn-outline-light m-1 text-light"
-                        href="#!"
-                        role="button">
-                            <i class="fab fa-instagram"></i>
-                        </a>
+                        <a class="btn btn-outline-light m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                        <!-- Google -->
+                        <a class="btn btn-outline-light m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
                     </div>
                 </div>
             </div>
