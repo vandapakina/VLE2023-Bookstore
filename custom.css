@@ -1,6 +1,6 @@
 /* maandumisleht.html */
 .jumbotron {
-    background-color: rgb(248, 238, 226)!important;
+    background-color: #d4cec3!important;
     color: rgb(121, 119, 119);
     font-family: 'Alkatra';
     height: 60vh;
@@ -14,7 +14,7 @@
 .jumbotron .btn {
     width: 225px;
 }
-p, h6, h2, h5, h3 {
+p, h6, h2, h5, h3, a, label {
     font-family: 'Alkatra';
 }
 footer {
@@ -36,7 +36,7 @@ footer .btn {
 
 /* raamatuteValik.html */
 header {
-    background-color: rgb(248, 238, 226);
+    background-color: #d4cec3;
 }
 #disabled {
     color: rgb(121, 119, 119);
@@ -62,6 +62,10 @@ header {
 .navbar-nav li {
     margin-right: 1em;
     font-family: 'Alkatra';
+    font-size: large;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #000000!important;
 }
 .card-body {
     align-content: center;
@@ -92,24 +96,54 @@ span.carousel-control-next-icon {
     font-size: 25px; 
     color: rgb(255, 210, 48);
 }
+.carousel-inner h5 {
+    font-weight: bold;
+}
 /* raamatuteValik.html */
 
 /* raamatuLeht.html */
-.p-5 .btn {
-    width: 150px;
-}
-/* raamatuteLeht.html */
-
-
-section {
-    margin-top: 40px;
-}
-.h {
-    text-align: center;
-}
-.form-check i {
-    font-size: 36px;
-} 
 #vahe {
     margin-right:2%;
 }
+.pt-3 .btn {
+    width: 150px;
+}
+.col-8 h3 {
+    font-weight: bold;
+}
+/* raamatuteLeht.html */
+
+/* ostukorv.html */
+section {
+    margin-top: 40px;
+}
+.form-check {
+    font-family: 'Alkatra';
+}
+.form-check i {
+    font-size: 36px;
+}
+.quantity {
+    width: 50px;
+}
+div h4 {
+    font-family: 'Alkatra';
+    font-weight: bold;
+}
+div h5 {
+    font-family: 'Alkatra';
+    font-weight: lighter;
+}
+div p {
+    font-family: 'Alkatra';
+}
+::placeholder{
+    font-family: 'Alkatra';
+}
+option {
+    font-family: 'Alkatra';
+}
+div h2 {
+    font-family: 'Alkatra';
+}
+/* ostukorv.html */ 
