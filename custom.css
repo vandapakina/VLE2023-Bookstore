@@ -1,3 +1,37 @@
+/* maandumisleht.html */
+.jumbotron {
+    background-color: rgb(248, 238, 226)!important;
+    color: rgb(121, 119, 119);
+    font-family: 'Alkatra';
+    height: 60vh;
+}
+.jumbotron hr {
+    border-top: 1px solid;
+}
+.jumbotron a {
+    font-family: 'Alkatra';
+}
+.jumbotron .btn {
+    width: 225px;
+}
+footer {
+    padding: 40px;
+}
+.fas {
+    font-size: 20px;
+    width: 40px;
+    text-decoration: none;
+}
+.fab {
+    font-size: 25px;
+    height: 25px;
+}
+footer .btn {
+    width: 150px;
+}
+/* maandumisleht.html */
+
+
 .lnr {
     display: inline-block;
     fill: currentColor;
@@ -30,36 +64,6 @@ section {
 
 .card-body {
     align-content: center;
-}
-
-footer {
-    margin-top: 60px;
-    padding: 5em;
-}
-
-.jumbotron {
-    color: rgb(121, 119, 119);
-    height: 60vh;
-}
-
-.jumbotron a {
-    background-color: rgb(0, 0, 0);
-    border-color: rgb(0, 0, 0);
-}
-
-
-.fas {
-    font-size: 30px;
-    width: 70px;
-    text-decoration: none;
-}
-
-.fab {
-    font-size: 30px;
-}
-
-.col-sm a {
-    flex-direction: column;
 }
 
 .form-check i {
