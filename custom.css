@@ -14,7 +14,7 @@
 .jumbotron .btn {
     width: 225px;
 }
-p, h6 {
+p, h6, h2, h5, h3 {
     font-family: 'Alkatra';
 }
 footer {
@@ -63,9 +63,6 @@ header {
     margin-right: 1em;
     font-family: 'Alkatra';
 }
-h2, h5 {
-    font-family: 'Alkatra';
-}
 .card-body {
     align-content: center;
 }
@@ -97,6 +94,11 @@ span.carousel-control-next-icon {
 }
 /* raamatuteValik.html */
 
+/* raamatuLeht.html */
+.p-5 .btn {
+    width: 150px;
+}
+/* raamatuteLeht.html */
 
 
 section {
